@@ -1,0 +1,31 @@
+.game-container {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(10,40px);
+  grid-gap: 2px;
+  margin: 20px auto;
+  width: fit-content;
+}
+.cell {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+.cell.V {
+  background-color: cadetblue;
+  color: white;
+}
+.cell.H {
+  background-color: brown;
+  color: white;
+}
